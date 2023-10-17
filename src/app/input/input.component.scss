@@ -1,0 +1,96 @@
+.tournament-schedule {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+    max-width: 600px;
+    margin:auto;
+  }
+
+  .input-team {
+    margin-bottom: 20px;
+  }
+  
+  .input-team label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .input-team input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .input-team button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .team-list ul {
+    list-style: none;
+  }
+
+.team-list li {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+
+  .schedule-option {
+    margin-bottom: 20px;
+  }
+
+  .schedule-option label {
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  
+.schedule-option input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .schedule-option button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .match-schedule h4 {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .match-schedule ul {
+    list-style: none;
+  }
+
+  .match-schedule li {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  
+  

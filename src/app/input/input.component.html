@@ -1,0 +1,32 @@
+<div class="tournament-schedule">
+    <div class="input-team">
+        <label for="teamname">Enter Team Names:</label>
+        <input type="text" id="teamname" [(ngModel)]="newTeamName" placeholder="Team Name">
+        <button (click)="addTeam()">Add Team</button>
+        <!-- <button (click)="deleteTeam()">Delete Team</button>  -->
+    </div>
+
+    <div class="team-list">
+        <ol>
+          <li *ngFor="let team of teams">
+                 {{team}}
+          </li>
+        </ol>
+      </div>
+
+      <div class="schedule-option">
+        <label for="startDate">Select the Starting Date:</label>
+        <input type="date" id="startDate" [(ngModel)]="startingDate">
+        <button (click)="generateMatchSchedule(startingDate)">Generate Schedule</button>
+      </div>
+
+      <div class="match-schedule">
+        <h4>Match Schedule</h4>
+        <ol>
+            <li *ngFor="let match of matches">
+              <!-- {{i+1}}.{{match}} -->
+                {{match.team1}} vs {{match.team2}} on {{match.matchDate | date: 'MMMM dd, YYYY'}}
+            </li>
+        </ol>
+      </div>
+</div>
