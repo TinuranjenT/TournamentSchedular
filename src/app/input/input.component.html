@@ -25,7 +25,7 @@
         <ol>
             <li *ngFor="let match of matches">
               <!-- {{i+1}}.{{match}} -->
-                {{match.team1}} vs {{match.team2}} on {{match.matchDate | date: 'MMMM dd, YYYY'}}
+                <span id="team1">{{match.team1}}</span> vs <span id="team2">{{match.team2}}</span> on {{match.matchDate | date: 'MMMM dd, YYYY'}}
             </li>
         </ol>
       </div>
